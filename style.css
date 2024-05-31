@@ -1,0 +1,92 @@
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor: none; */
+}
+
+
+html {
+    height: 100%;
+}
+
+body{
+    text-align: center;
+    height: 100%;
+}
+
+.container{
+    position: relative;
+}
+
+#layout{
+    position: absolute;
+    top:0%;
+    left: 37%;
+}
+
+#choices{
+    position: absolute;
+    margin-top: 0.5%;
+    left: 43%;
+    display: grid;
+    grid-template-rows: 58px 58px 58px;
+    grid-template-columns:56px 56px 56px;
+    gap: 22px;
+    justify-content: center;    
+    padding-top: 3%;  
+}
+
+.clickedX{
+    cursor: pointer;
+    background-image: url(./public/images/ximage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.clicked0{
+    cursor: pointer;
+    background-image: url(./public/images/0image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#pointer{
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    pointer-events: none;
+} 
+
+#pointer.blue {
+    background-image: url('./public/images/hand2.png');
+}
+
+#pointer.red {
+    background-image: url('./public/images/hand1.png');
+}
+
+
+
+/* .pointer::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-image: url(./public/images/hand1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:50px;
+    height:50px;
+    opacity:1;
+    pointer-events:none;
+} */
+
